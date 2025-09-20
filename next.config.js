@@ -1,5 +1,4 @@
-markwatson@2020MacBookPro-2 hillsboro-election-map % /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -7,6 +6,3 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
 }
-
-module.exports = nextConfig
-zsh: parse error near `}'
