@@ -283,7 +283,7 @@ const GeographicMapView = ({ raceData, viewMode, onPrecinctClick, selectedPrecin
     if (precinctData.candidates.length === 0) return '#E5E7EB';
     
     let winner = precinctData.candidates[0];
-    for (let candidate of precinctData.candidates) {
+    for (const candidate of precinctData.candidates) {
       if (candidate.votes > winner.votes) {
         winner = candidate;
       }
@@ -535,7 +535,7 @@ const GeographicMapView = ({ raceData, viewMode, onPrecinctClick, selectedPrecin
       }
       
       // Handle both Polygon and MultiPolygon geometries with EXACT fidelity to the GeoJSON
-      let allPolygonPaths = [];
+      const allPolygonPaths = [];
       
       if (feature.geometry.type === 'Polygon') {
         // For Polygon: coordinates[0] is outer ring, coordinates[1+] are holes (ignore holes for now)
@@ -897,7 +897,7 @@ const InteractiveMapView = ({ raceData, viewMode, onPrecinctClick, selectedPreci
     if (precinctData.candidates.length === 0) return '#E5E7EB';
     
     let winner = precinctData.candidates[0];
-    for (let candidate of precinctData.candidates) {
+    for (const candidate of precinctData.candidates) {
       if (candidate.votes > winner.votes) {
         winner = candidate;
       }
