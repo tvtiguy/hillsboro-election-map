@@ -9,7 +9,7 @@ const createSampleElectionData = () => {
   
   const races = [];
   const raceConfigs = [
-    { seat: 'Seat 1', candidates: ['Sidney S Thompson', 'Yesenia Hardin-Mercado'] },
+    { seat: 'Seat 1', candidates: ['Sidney S Thompson', 'Yessica Hardin-Mercado'] },
     { seat: 'Seat 2', candidates: ['Mark Watson', 'Maureen Barnhart'] },
     { seat: 'Seat 4', candidates: ['Nancy Thomas'] },
     { seat: 'Seat 6', candidates: ['Katie Rhyne', 'Rebecca Descombes'] }
@@ -251,7 +251,7 @@ const getColorsForRace = (raceName) => {
     'Rebecca Denison': '#DC2626', // In case of name variation
     
     // Blue candidates  
-    'Yesenia Hardin-Mercado': '#2563EB', // blue-600
+    'Yessica Hardin-Mercado': '#2563EB', // blue-600
     'Yessica Hardin-Mercado': '#2563EB', // In case of name variation
     'Mark Watson': '#2563EB',
     'Nancy Thomas': '#2563EB',
